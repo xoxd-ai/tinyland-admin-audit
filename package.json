@@ -1,7 +1,8 @@
 {
   "name": "@tummycrypt/tinyland-admin-audit",
   "version": "0.2.2",
-  "description": "Admin audit logging with GDPR-compliant IP hashing and device detection",
+  "private": true,
+  "description": "RETIRED: merged into @tummycrypt/tinyland-logging/admin-audit (tinyland-logging 1.2.0). Admin audit logging with GDPR-compliant IP hashing and device detection",
   "type": "module",
   "license": "Zlib AND LicenseRef-Tinyland-Proprietary",
   "main": "./dist/index.js",
@@ -25,7 +26,6 @@
     "test:watch": "vitest",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "check:package": "publint"
   },
   "keywords": [
@@ -51,10 +51,6 @@
   },
   "engines": {
     "node": ">=22.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
   },
   "packageManager": "pnpm@10.13.1",
   "homepage": "https://github.com/tinyland-inc/tinyland-admin-audit",
